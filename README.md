@@ -12,15 +12,15 @@
 ## 使用方法
 
 ### 启动服务
-运行以下命令启动服务：
+运行以下命令在8000端口上启动服务：
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000
+python main.py
 ```  
 ### 调用 OCR 接口
-通过 /ocr POST 接口上传图片并提取文字。
-{
-  "image_base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/..."
-}
+通过 /ocr POST 接口上传图片并提取文字。    
+{  
+  "image_base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/..."  
+}  
 
 ### 依赖环境
 Python 3.8+  
